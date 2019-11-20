@@ -9,12 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+//MARK: Properties
+    @IBOutlet weak var emojiMessage: UITextField!
+    @IBOutlet weak var happySadAnswer: UILabel!
+    
+    
+//MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    //Obtain user input from text field
+    guard let emojiMessageAsString = emojiMessage.text else {
+    happySadAnswer.text = "Please input a value. "}
 
 }
+
+
+
+
 
