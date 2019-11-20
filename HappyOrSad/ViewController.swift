@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
 //MARK: Properties
     @IBOutlet weak var emojiMessage: UITextField!
-    @IBOutlet weak var happySadAnswer: UILabel!
+    @IBOutlet weak var happyOrSadOutput: UILabel!
+    
     
     
 //MARK: Methods
@@ -21,13 +22,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //Obtain user input from text field
-    guard let emojiMessageAsString = emojiMessage.text else {
-    happySadAnswer.text = "Please input a value. "}
+    
+    @IBAction func analyzeMessage(_ sender: Any) {
+        //Obtain user input from text field
+        guard let emojiMessageAsString = emojiMessage.text else {
+            happyOrSadOutput.text = "Please input a value. "
+            return
+        }
+        //Prevent user from entering a message that is too long
+        
 
+    }
 }
-
-
-
 
 

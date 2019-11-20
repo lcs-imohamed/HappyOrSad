@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Analyze"/>
                                 <connections>
-                                    <action selector="analyzeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZK-I4-ExF"/>
+                                    <action selector="analyzeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QTC-7g-ceC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer will appear here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wck-gL-4P1">
@@ -43,6 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="emojiMessage" destination="PnU-fa-Xwy" id="URr-0B-b1s"/>
+                        <outlet property="happyOrSadOutput" destination="Wck-gL-4P1" id="7UR-1c-YEj"/>
                         <outlet property="happySadAnswer" destination="Wck-gL-4P1" id="HiA-9J-ehT"/>
                     </connections>
                 </viewController>
