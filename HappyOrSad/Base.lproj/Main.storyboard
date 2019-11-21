@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Emojis's Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-fa-Xwy">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Emojis Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-fa-Xwy">
                                 <rect key="frame" x="49" y="123" width="222" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -42,9 +42,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="emojiMessage" destination="PnU-fa-Xwy" id="URr-0B-b1s"/>
-                        <outlet property="happyOrSadOutput" destination="Wck-gL-4P1" id="7UR-1c-YEj"/>
-                        <outlet property="happySadAnswer" destination="Wck-gL-4P1" id="HiA-9J-ehT"/>
+                        <outlet property="happyOrSadOutput" destination="Wck-gL-4P1" id="8bf-dw-6F4"/>
+                        <outlet property="phraseInputField" destination="PnU-fa-Xwy" id="hAB-Mv-fjQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
