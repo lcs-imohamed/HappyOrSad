@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func analyzeMessage(_ sender: Any) {
+        
         //Obtain user input from text field
         guard let phraseInput = phraseInputField.text, phraseInput.count > 0 else {
             happyOrSadOutput.text = "Please input a value. "
@@ -49,19 +50,22 @@ class ViewController: UIViewController {
             if singleCharacter == "😃" || singleCharacter == "😊" || singleCharacter == "🙂" || singleCharacter == "😄" {
                 happyCount += 1
             }
-            for singleCharacter in phraseInput {
-                if singleCharacter == "☹" || singleCharacter == "🙁" || singleCharacter == "😕" || singleCharacter == "😔" {
-                sadCount += 1
-                }
             
-    
+            if singleCharacter == "☹" || singleCharacter == "🙁" || singleCharacter == "😕" || singleCharacter == "😔" {
+                sadCount += 1
             }
-         //use happy count and sad count to track counts
-                        //after inspcting each character
-                        //if/else if............
-                        //if cond
-                        //else if cond
             
         }
+
+        //If there are more happy emojis display happy output, do the same for all other outputs
+        if happyCount > sadCount {
+            happyOrSadOutput.text = "Happy! :)"
+        } else if sadCount > happyCount {
+            happyOrSadOutput.text = "Sad :("
+        } else {
+            happyOrSadOutput.text = "Unsure :|"
+        }
+        
+    }
 }
-}
+
